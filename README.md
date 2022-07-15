@@ -2,7 +2,7 @@
 
 ## 4th Semester Minor Project-1 
 
-## BY 
+### BY 
 *Aayush Dewangan (201020401)
 *Aryan Kaul (201020408)
 *Kunal Mahajan (201020427) 
