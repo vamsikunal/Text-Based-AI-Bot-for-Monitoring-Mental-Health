@@ -1,0 +1,5 @@
+﻿text,label
+bad bad good,0
+good,1
+good good bad,1
+bad bad,0

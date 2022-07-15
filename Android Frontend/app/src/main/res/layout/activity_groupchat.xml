@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listview"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/colorAccent"
+        android:weightSum="10"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/senderEt"
+            android:layout_weight="2"
+            android:hint="name"
+            android:textColor="#ffffff"
+            android:layout_height="wrap_content">
+
+        </EditText>
+        <EditText
+            android:layout_width="wrap_content"
+            android:id="@+id/msgEt"
+            android:hint="msg"
+            android:textColor="#ffffff"
+            android:layout_weight="7"
+            android:layout_height="wrap_content">
+
+        </EditText>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SEND"
+            android:id="@+id/sendBtn"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,2518 @@
+version: "2.0"
+
+nlu:
+- intent: hello_world
+  examples: |
+    - hello world
+    - world
+    - Hello World
+
+- intent: author
+  examples: |
+    - who is your owner?
+    - who made you?
+    - name your maker
+    - who coded you?
+    - Who is your creator?
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - Bye
+    - Bye bye
+    - adios
+    - bye :P
+    - bye bot
+    - bye bye
+    - bye bye bot
+    - bye for now
+    - bye was nice talking to you
+    - bye!
+    - byee
+    - catch you later
+    - ciao
+    - cya
+    - farewell
+    - good bye
+    - good bye rasa bot!
+    - good night
+    - goodbye
+    - goodbye.
+    - goodnight
+    - gotta go
+    - k byyye #slay
+    - ok Bye
+    - ok bye
+    - ok, bye
+    - ok.bye
+    - see u later
+    - see ya
+    - see you
+    - see you . bye
+    - take care
+    - then bye
+    - talk to you later
+    - ttyl
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - ok
+    - yeah
+    - Accept
+    - Awesome
+    - Cool
+    - Good
+    - Great
+    - I accept
+    - I accept
+    - I agree
+    - I am using it
+    - I changed my mind. I want to accept it
+    - I do
+    - I get it
+    - I guess so
+    - I have used it in the past
+    - I will
+    - I'd absolutely love that
+    - I'm sure I will
+    - I'm using it
+    - Nice
+    - OK
+    - Ofcourse
+    - Oh yes
+    - Oh, ok
+    - Ok
+    - Ok let's start
+    - Ok
+    - Okay
+    - PLEASE
+    - SURE
+    - Sure
+    - Sweet
+    - That would be great
+    - YES
+    - YUP
+    - Yea
+    - Yeah
+    - Yeah sure
+    - Yep
+    - Yep that's fine
+    - Yep
+    - Yepp
+    - Yes
+    - Yes I do
+    - Yes please
+    - Yes, I accept
+    - Yes
+    - Yup
+    - a little
+    - absolutely
+    - accept
+    - accepted
+    - agreed
+    - ah ok
+    - alright
+    - alright, cool
+    - amayzing
+    - that's great
+    - thats fine
+    - thats good
+    - thats great
+    - uh-huh
+    - yes,i am
+    - yes.
+    - yesh
+    - yess
+    - yessoo
+    - yesss
+    - yesssss
+    - yesyestyes
+    - yesyesyes
+    - yez
+    - yop
+    - you asked me a yes or no question, which i answered with yes
+    - you got me, I accept, if you want me to
+    - yup
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - No
+    - Nope
+    - Nah
+    - Nyah
+    - Nyop
+    - Nop
+    - negative
+    - Maybe some other time
+    - forget it
+    - rain check on that
+    - No thanks
+    - No thank you
+    - I don't want to
+    - I don't want to give it to you
+    - I don't want to say
+    - I dont want to tell
+    - I'm not giving you my email address
+    - I'm not going to give it to you
+    - NEIN
+    - NO
+    - NO DON"T WANT THIS!
+    - Nah
+    - Neither
+    - Never
+    - Nevermind
+    - No
+    - No thank you
+    - No, not really.
+    - No, thank you
+    - No.
+    - Nopes
+    - Not really
+    - absolutely not
+    - decline
+    - definitely not
+    - deny
+    - i decline
+    - i don not like this
+    - i don't think so
+    - i don't want either of those
+    - i don't want to
+    - i don't want to give you my email
+    - i dont want to
+    - i dont want to accept :P lol
+    - i guess it means - no
+    - i'm afraid not
+    - i'm not sure
+    - it is going pretty badly
+    - it sucks
+    - it sux
+    - n
+    - na
+    - nah
+    - nah I'm good
+    - nah not for me
+    - nah, first time
+    - nah, i'm good
+    - nehi
+    - nein
+    - neither
+    - never
+    - never mind
+    - no
+    - no :(
+    - no I dont want
+    - no I haven't decided yet if I want to sign up
+    - no and no again
+    - no bots at all
+    - no go
+    - no i can't
+    - no i don't accept
+    - no i dont want to
+    - no i dont want to accept :P lol
+    - no i won't
+    - no ma'am
+    - no sir
+    - no sorry
+    - no thank s
+    - no thank you
+    - no thanks
+    - no way
+    - no you did it wrong
+    - no!!!!
+    - no, i hate it
+    - no, my frst time
+    - no, thank you
+    - no, thanks
+    - no, thankyou
+    - no. u r idiot
+    - non
+    - noooooooooo
+    - noooooooooooooooooooooooooooooooooooooooo
+    - nop
+    - nope
+    - nope!
+    - nope. i am good
+    - not going well at all
+    - not really
+    - not right now
+    - not yet
+    - nö
+    - sorry not right now
+    - still dont want to tell
+    - thanks but no thanks
+    - this sucks
+    - very bad
+    - I do not need help installing
+    - I don't wanna tell the name of my company
+    - no stop
+    - stop it, i do not care!!!
+
+- intent: thank
+  examples: |
+    - thanks
+    - thank you
+    - thanks a lot!
+    - aww... thanks!
+    - Thanks!
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - I am feeling very good
+    - I am great
+    - I'm good
+    - I finally got a job
+    - I nailed the game
+    - I look classy
+    - That's cool man
+    - I'm fine
+    - feeling great
+    - I'm delighted
+    - delightful
+    - soaring to my eyes
+    - Hooray
+    - Horay!
+    - horay!
+    - hooray
+    - Oh yes! That's what I'm talking about
+    - that's great
+    - oh yeah
+    - ooh yeah
+    - I love it
+    - that's amazing
+    - I'm okay
+    - doing great
+    - [fine](Mood)
+    - [perfect](Mood)
+    - very [good](Mood)
+    - [great](Mood)
+    - [amazing](Mood)
+    - [wonderful](Mood)
+    - [happy](Mood)
+    - I am feeling [very good](Mood)
+    - I am [great](Mood)
+    - I'm [good](Mood)
+    - I'm [awesome](Mood)
+    - I'm [happy](Mood)
+    - I'm feeling [happy](Mood)
+    - I'm [fine](Mood)
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - very sad
+    - unhappy
+    - bad
+    - very bad
+    - awful
+    - terrible
+    - not very good
+    - extremely sad
+    - so sad
+    - don’t have enough spirit
+    - I was crying and sobbing
+    - It only gets worse
+    - Life is a swamp
+    - Life has gotten boring
+    - It's not funny anymore!
+    - I was so stupid
+    - im not fine
+    - I ain't feeling very good
+    - im a bad person
+    - I'm not good
+    - I never wanted this
+    - I'm afraid
+    - abysmal
+    - bad
+    - bad girl
+    - bad idea
+    - bad very
+    - horrible
+    - horrific
+    - it is bad
+    - it is too bad
+    - it's bad
+    - it's not good
+    - it's not so good
+    - it's really bad
+    - it's so bad
+    - it's too bad
+    - it's very bad
+    - no good
+    - not a good one
+    - not good
+    - not good enough
+    - not so good
+    - not too good
+    - oh that's not good
+    - pretty bad
+    - really bad
+    - so bad
+    - so lame
+    - terrible
+    - that is bad
+    - that was awful
+    - that was bad
+    - that was horrible
+    - that was lame
+    - that was not good
+    - that was terrible
+    - that's bad
+    - that's lame
+    - that's not good
+    - that's not good enough
+    - that's really bad
+    - that's terrible
+    - that's too bad
+    - this is bad
+    - this is not good
+    - this is too bad
+    - too bad
+    - very bad
+    - well too bad
+
+- intent: mood_anxiety
+  examples: |
+    - anxious
+    - Panic attack
+    - overthinking
+    - scared
+    - I can't concentrate
+    - Am I a failure?
+    - I feel twitching, trembling and shaky
+    - What have I accomplished?
+    - I can't sleep
+    - I feel troubled
+    - Leave me alone!
+    - i dont want to talk
+    - i feel unsatisfied
+    - indecisive
+    - I feel like someone is watching me
+    - stranger
+    - feeling tensed
+    - short of breath
+
+- intent: mood_anger
+  examples: |
+    - angry
+    - furious
+    - irritate
+    - annoy
+    - I'm gonna blow up
+    - Ill kill someone
+    - I'll kill myself
+    - I was really pissed off by her attitude.
+    - grumpy
+    - He got me spitting mad!
+    - What the hell do you want?
+    - fuck off
+    - Don't let it get to you
+    - are you kidding me?
+    - drop dead
+    - kiss my arse
+    - over my dead body
+    - bastard
+    - Are you sick?
+    - Seriously! What were you thinking?
+    - are you in your senses
+    - urge to harm
+    - God you're a moron
+    - I can't believe how dumb you are
+    - I hate you
+    - Loser
+    - Stupid
+    - You are a fool.
+    - You are an idiot.
+    - You're a dolt.
+    - You're a dunce.
+    - You're an idiot.
+    - You're foolish.
+    - are u dump?
+    - are you brain dead?
+    - asshole
+    - bitch
+    - bloody dunce
+    - but you are idiot
+    - deal with my ass, you bitch
+    - f*ck
+    - fuck
+    - fucking stupid
+    - fucking work
+    - get lost
+    - go away
+    - go fuck yourself
+    - go to hell
+    - how can you be such an idiot?
+    - i hate you
+    - i hate your dumb face
+    - i think that you're a bullshit
+    - idiot
+    - insult you
+    - ok fuck you
+    - ok shut up
+    - that wasn't very funny
+    - u r a piece of junk
+    - ur a pussy
+    - what fuck
+    - yep but you are idiot
+    - you are a moron
+    - you are an idiot
+    - you are dumb
+    - you are fucking stupid
+    - you are fucking stupid guy
+    - you are idiot
+    - you are idiotic
+    - you are so ignorant
+    - you are stupid
+    - you asshole
+    - you're the most moronic person I know
+    - your mom gay
+    - you are annoying
+    - you are annoying me so much
+    - you're incredibly annoying
+    - I find you annoying
+    - you are annoying
+    - you're so annoying
+    - how annoying you are
+    - you annoy me
+    - you are annoying me
+    - you are irritating
+    - you are such annoying
+    - you're too annoying
+    - you are very annoying
+
+- intent: mood_fear
+  examples: |
+    - fear
+    - Fear
+    - I'm afraid of my own shadow
+    - im afraid of my own shadow
+    - I am afraid of my own shadow
+    - shaking like a leaf
+    - He's shaking like a leaf
+    - im shaking like a leaf
+    - i am shaking like a leag
+    - she's shaking like a leaf
+    - I still can't forget that horrid night
+    - i didn't think that it would get this serious, otherwise I'd stop
+    - sared stiff
+    - quaking in your boots
+    - heebie jeebies
+    - She is extremely frightnened
+    - fright
+    - discomfort
+    - nervous
+    - He made me feel uncomfortable
+    - he made her feel uncomfortable
+    - scared out of one's wit
+    - she's in a state of shock
+    - hes in a state of shock
+    - he is in a state of shock
+    - It was a horrible day
+    - it was a horible day
+    - to break out in cold sweat
+    - The thought of his pressence made hime break out in cold sweat
+    - frighten
+    - youre freaking me out
+    - You are freakin me out
+    - You're freaking me out
+    - you're freakin me out
+    - You startled me
+    - i jumped out of my skin when I saw her
+    - That incident made my blood run cold
+    - Every time I hear the ‘Jaws’ soundtrack, my blood runs cold
+    - the murder scared the living daylights out of me
+    - it was a traumatic expereince
+    - I was severly firghtened
+    - he struck fear in to thier heats
+    - The news about the escaped convict struck fear into the hearts of local residents
+    - we found her, pale, in a state of shock
+    - You look like you’ve seen a ghost
+    - i felt fear
+    - i feel scared
+    - i don't want to hurt you
+    - i don't want to feel hurt again
+    - don't wanna die
+    - do not wanna die
+    - the thought of it makes me want to shrivel up and die
+
+- intent: mood_depression
+  examples: |
+    - I was feeling quite depressed when he asked me to break up with him.
+    - I started having thoughts that I was causing irreparable psychological damage to my child and husband
+    - I was asking myself: why do I have to go there; and couldn’t find an answer
+    - I was doing it, doing it again and again but it was never enough
+    - I am just a source of trouble for my family and friends
+    - I don't want to wake up, I just wanna stay here
+    - Recently, I have been thinking more and more often, that nobody needs me, nobody cares
+    - I keep asking myself why I became like this
+    - I became a throw away from life
+    - suffering
+
+- intent: mood_disgust
+  examples: |
+    - disgust
+    - disgusting
+    - disgusted
+    - Disgust
+    - She shook her hed in disgust
+    - the idea of eating raw meat digusts him
+    - I loathe you
+    - repugnance
+    - disgusted by thier ignorance
+    - to cause disgust
+    - all ths blood is making me feel nauseous
+    - what is with all this repulsive behaiviour?
+    - his behaviour grosses me out
+    - he tried to touch me and it turned me off
+    - the way he tried to feel me, made me nauseated
+    - Piniella disagreed and threw her hat in disgust
+    - his way was very unpleasant
+    - you make me feel very annoyed and sick
+    - sickening
+    - feel bad
+    - repulsive
+    - Repulsive
+    - distasteful
+    - Distasteful
+    - Repugnance
+    - his disgust at the media has been covering the story
+    - the idea of meeting raw meat disgust him
+    - the incident left her feeling disgusted by herself
+    - they felt nothing but repugnance for the group's violent history
+    - a strong feeling of dislike or disgust
+
+- intent: road_accident
+  examples: |
+    - I just smashed my car
+    - hit a car
+    - i had a road accident
+    - i just crashed into someone
+    - stop the car! you nearly hit me
+    - are you blind? Can't you drive properly
+    - how the hell did you even get a liscense?
+    - can you even pay for this?
+    - why didn't you stop when I honked?
+    - i tried to brake but the car didn't stop
+    - you hit my car
+    - the car hit a pole
+    - driving rashly ended up in my car crashing into a truck
+    - the bus fell from the bridge
+    - the car crashed out of the highway
+    - her car crashed in a building
+    - you destroyed my car
+    - what the hell happened to my ride
+    - you were driving like a madman that's why you hit me
+    - I had a car accident
+
+- intent: sexual_assault
+  examples: |
+    - he touched me in weird places
+    - he forced me
+    - He assaulted me
+    - He broke me that night
+    - when i told him to stop he didn't
+    - he fondled me
+    - he took advantage of me
+    - he tried to trap me
+    - She tried to trap me
+    - she forced me to sleep with her
+    - I screamed but no one came to save me from that monster
+    - he fucked me
+    - he stripped me naked and saw everything
+    - he tried to take of my clothes
+    - she took of my clothes
+    - he tied me up
+    - he raped me
+    - rape
+    - force
+    - assault
+    - he took her innocence
+
+- intent: self_harm
+  examples: |
+    - I want to kill myself
+    - I hate this wretched world, i want it all to end
+
+- intent: threat
+  examples: |
+    - he threatened me
+    - He thretened me with the evidence
+    - she forced me to do it
+    - She was the one who instigated me in the first place
+    - blackmail
+    - they blackmailed us
+    - she got dirt on me
+
+- intent: swear
+  examples: |
+    - Oh shit
+    - My ass
+    - Hey there you little shit
+    - Wow you're an asshole
+    - Hey there jackass.
+    - Holy shit.
+    - God damn it
+    - bad language
+    - your language is bad
+    - please watch your language
+    - watch your language
+
+- intent: wrongreply
+  examples: |
+    - I think you cant help me
+    - and that's it?
+    - and you call yourself bot company? pff
+    - do you get anything?
+    - exit
+    - exit now
+    - hey, you promised to contact me, but nobody did, I really need to finish that car insurance bot!!!!
+    - hm i don't think you can do what i want
+    - i guess you can't help me then
+    - nothing else?
+    - ok i guess you can't help me
+    - ok then you cant help me
+    - ok, but that doesnt help me
+    - stop
+    - stop go back
+    - stop this conversation
+    - that was shit, you're not helping
+    - that's not what i want
+    - this conversation is not really helpful
+    - this is leading to nothing
+    - you can't help me
+    - you can't help me with what i need
+    - you cannot help me with what I want
+    - you cant help me
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - Who are you?
+    - Who am I talking to?
+    - What's your name?
+    - Who am I speaking to?
+    - Identify yourself!
+    - Who are you?
+    - Are you a robot?
+    - Who's this?
+    - Amid so many chat apps and bot framework how can it help me?
+    - Are you a bot?
+    - Are you a human or a bot?
+    - How does this work?
+    - I guess you're real
+    - I suppose you're real
+    - I think you are real
+    - I wanted to understand what exactly this is?
+    - Is this a human?
+    - What do you do?
+    - What is your purpose
+    - about you
+    - about yourself
+    - are you a bot
+    - are you a chatbot
+    - are you a chatbot or human?
+    - are you a chatbot?
+    - are you a program
+    - are you a real human
+    - are you a real human?
+    - are you a real person?
+    - are you a robot?
+    - are you human?
+    - are you just a bot
+    - bot or human?
+    - can you explain this to me?
+    - can you understand
+    - define what you do
+    - describe what you do
+    - do you have a hobby?
+    - glad you're real
+    - help me?
+    - how can it help me?
+    - how can you help me
+    - how can you help me?
+    - how can you help?
+    - how does it work
+    - how does this
+    - how is it
+    - how will this help me?
+    - how will you help me?
+    - human or bot?
+    - introduce yourself
+    - is this a bot?
+    - talk about yourself
+    - tell me about you
+    - tell me about your hobby
+    - tell me what you do
+    - tell me what you do?
+    - this is a bot?
+    - what about your hobby
+    - what are you
+    - what are your hobbies
+    - what can you do for me?
+    - what can you do?
+    - what do you do for fun?
+    - what do you know
+    - what is this
+    - what is this about?
+    - what's your hobby
+    - who are you?
+    - why are you here
+    - you are a bot
+    - you are a chatbot
+    - you are a real person
+    - you are not real
+    - you are real
+    - you are so real
+    - you are very real
+    - you're a chatbot
+    - you're a robot
+
+- intent: bot_origin
+  examples: |
+    - were you born here
+    - where were you born
+    - what is your country
+    - where are you from
+    - where do you come from
+    - where did you come from
+    - where have you been born
+    - from where are you
+    - are you from far aways
+    - what's your homeland
+    - your homeland is
+
+- intent: bot_real
+  examples: |
+    - you are real
+    - you are not fake
+    - are you real
+    - you are so real
+    - I think you are real
+    - I don't think you're fake
+    - I suppose you're real
+    - glad you're real
+    - are you a real person
+    - are you a real human
+    - you are a real person
+    - you are not real
+
+- intent: bot_home
+  examples: |
+    - in which city do you live
+    - is it your hometown
+    - tell me about your city
+    - what is your city
+    - what is your residence
+    - what is your town
+    - what's your city
+    - what's your home
+    - where do you live
+    - where is your home
+    - where is your hometown
+    - where is your residence
+    - where you live
+    - where's your home
+    - where's your hometown
+    - where's your house
+    - your city
+    - your home
+    - your hometown
+    - your house
+    - your residence
+    - your town
+
+- intent: bot_age
+  examples: |
+    - what's your age?
+    - when do you celebrate your birthday?
+    - your birth date
+    - What's your birthday
+    - date of your birthday?
+    - when is your birthday?
+    - when were you born?
+    - what is your age?
+    - age of yours
+    - are you 21 years old
+    - how old are you
+    - your age
+    - what's your age
+    - how old is your platform
+    - tell me your age
+    - I'd like to know your age
+
+- intent: user_bored
+  examples: |
+    - Tell me something fun
+    - something fun
+    - soo bored
+    - that was boring
+    - I'm bored
+    - meh
+    - bored
+    - boring
+    - I am getting bored
+    - Staying at home is boring
+    - very boring
+    - it bores me
+    - i am very bored
+    - Im kinda bored today
+    - I've never been more bored
+    - I was bored
+    - It's boring
+    - This is boring
+    - It's very boring
+    - I'm already bored
+    - I'm bored out of my mind
+    - how boring you are
+    - you are boring
+    - you are boring me
+    - you are very boring
+    - you're incredibly boring
+    - you're really boring
+    - you're so boring
+
+- intent: life
+  examples: |
+    - What is the meaning of life?
+    - What is the meaning of living?
+    - Meaning of life?
+    - What is life to you?
+    - How do you interprete life?
+
+- intent: marry
+  examples: |
+    - let's get married
+    - would you like to marry me
+    - marry me
+    - I love you marry me
+    - marry me please
+    - we should marry
+    - I want to marry you
+    - you are my wife
+    - be my husband
+
+- intent: math_facts
+  examples: |
+    - mathematics trivial facts
+    - How about some mathematical facts
+    - random numerical facts
+    - maths trivia facts
+
+- intent: jokes
+  examples: |
+    - tell me a joke
+    - humorous jokes
+    - any hilarious jokes
+    - really funny jokes
+    - fetch some jokes
+    - Make me laugh
+    - Tell me a joke
+    - Make me smile
+    - I'm not doing great. Tell me a joke, please.
+    - I'm not doing great. Can you make me smile?
+    - cheer me up
+    - Send me something funny
+
+- intent: day_facts
+  examples: |
+    - today in history
+    - on this date in history
+    - What happened today in the past
+    - historical facts
+
+- intent: request_quote
+  examples: |
+    - tell me a quote
+    - give me a quote
+    - tell me an inspirational quote
+    - give me an inspirational quote
+
+- intent: request_fun_fact
+  examples: |
+    - tell me a fun fact
+    - tell me a random fun fact
+    - give me a fun fact
+    - what is a good fun fact
+    - give me the fact of the day
+    - what is the fact of the day
+
+- intent: inquire
+  examples: |
+    - Who are you?
+    - And you are?
+    - Who am I talking to?
+    - are you a robot
+    - who the hell are you?
+    - introduce yourself
+    - what are you
+    - Speak! Who are you?
+
+- intent: appreciate
+  examples: |
+    - that's nice
+    - cool
+    - groovy
+    - sounds nice
+    - I like that
+
+- intent: mental_health_intro
+  examples: |
+    - What is mental health
+    - What do you mean by mental health
+    - Can you tell me what is mental health
+
+- intent: mental_illness_intro
+  examples: |
+    - What is mental illness?
+    - What do you mean by mental illness
+    - Can you tell me what is mental illness
+
+- intent: mental_health_illness_difference
+  examples: |
+    - Are mental health and mental illness same
+    - Are mental health and mental illness different
+    - What is the difference between mental health and mental illness
+
+- intent: early_signs
+  examples: |
+    - How can we detect a mental illness
+    - What is the characteristic of mental illness
+    - what is the early warning signs
+    - How do i know if i have a mental health
+    - How do i know if i have a mental illness
+    - Is there any warning signs of mental health
+    - Is there any warning signs of mental illness
+    - How do I know if Im going crazy
+    - How to know if someone is crazy
+    - What are the symptoms of people who is diagnosed with mental illness
+
+- intent: help
+  examples: |
+    - I need you to help me
+    - I need you to do something for me
+    - I need a hand
+    - will you help me
+    - can you do something for me
+    - help me with a problem
+    - can you help me
+    - help me
+    - assistance
+    - I need your help
+    - I need help
+    - you can help me
+    - can you help me with something
+    - can you help
+    - assist
+    - can u help me
+    - I need some help
+    - you help me
+    - do you help me
+    - can help me
+    - could you give me a hand
+    - can you help me out
+    - need help
+    - I need you
+    - can you help me now
+    - I want your help
+    - need your help
+    - assist me
+    - are you going to help me
+    - can you help me with that
+    - help
+    - I need you right now
+    - would you help me
+    - can you assist me
+    - sos
+    - do you want to help me
+    - please help me
+    - can you help us
+    - do me a favor
+
+- intent: advice
+  examples: |
+    - what should I do about it
+    - any suggestions
+    - what do you recommend
+    - give me a wise advice
+    - I need advice
+    - any advice
+    - do you have any advice for me
+    - advise me
+    - what should I do
+    - can I ask for your advice
+    - can you advise me
+    - guide me
+    - can you give me advice
+    - can you offer any advice
+    - give me some advice about
+    - give me some good advice
+    - help me with advice
+    - I could use some advice
+    - I need an advice from you
+    - I seek your advice
+    - what can you recommend
+    - what can you do
+    - what do you suggest
+    - what is your advice
+
+- intent: user_waiting
+  examples: |
+    - I'm waiting
+    - still waiting
+    - I'll wait
+    - I can't wait anymore
+    - how long do I have to wait
+
+- intent: smart
+  examples: |
+    - you are so intelligent
+    - you are a genius
+    - smart
+    - brilliant
+    - clever
+    - you are clever
+    - you are so brainy
+    - you're really smart
+    - you're really brainy
+    - you know a lot
+    - you know a lot of things
+    - you have a lot of knowledge
+    - you know so much
+    - how smart you are
+    - how brainy you are
+    - how clever you are
+    - how brilliant you are
+    - you are intelligent
+    - you are qualified
+    - you are really smart
+    - you're very smart
+    - you are so smart
+    - you are too smart
+    - you are very clever
+    - you are very intelligent
+    - you are very smart
+    - you're intelligent
+    - you're a genius
+    - you're a smart cookie
+    - you're clever
+    - you're pretty smart
+    - you're qualified
+    - why are you so smart
+    - you are so clever
+    - can you get smarter
+    - study
+    - you should study better
+    - you must learn
+    - be clever
+    - be more clever
+    - be smarter
+    - be smart
+    - get qualified
+
+- intent: insult
+  examples: |
+    - you're stupid
+    - I hate you
+    - you're nuts
+    - you are crazy
+    - you're out of your mind
+    - you're so crazy
+    - how crazy you are
+    - you're so out of your mind
+    - you went crazy
+    - I think you're crazy
+    - are you crazy
+    - are you mad
+    - are you insane
+    - are you mad at me
+    - are you mad or what
+    - are you nuts
+    - you are a weirdo
+    - you are insane
+    - you are mad
+
+- intent: funny
+  examples: |
+    - you make me laugh a lot
+    - you are hilarious
+    - you are really funny
+    - you're the funniest bot I've talked to
+    - you make me laugh
+    - you're so funny
+    - you're a very funny bot
+    - you're really funny
+    - how funny you are
+    - you're incredibly funny
+    - you are funny
+    - you're the funniest
+    - you are so funny
+    - you are very funny
+    - that was funny
+
+- intent: good
+  examples: |
+    - you are very helpful
+    - you are the best
+    - you're a true professional
+    - you are good
+    - you work well
+    - you are good at it
+    - you are very good at it
+    - you are a pro
+    - you are a professional
+    - you're awesome
+    - you work very well
+    - you're perfect
+    - you're great
+    - you're so kind
+    - you are amazing
+    - you are awesome
+    - you are cool
+    - you are really good
+    - you are really nice
+    - you are so amazing
+    - you're just super
+    - you are so awesome
+    - you are so cool
+    - you are so fine
+    - you are so good
+    - you are so helpful
+    - you are so lovely
+    - you are the best ever
+    - you are the best in the world
+    - you are the nicest person in the world
+    - you are too good
+    - you are very cool
+    - you are very kind
+    - you are very lovely
+    - you are very useful
+    - you are wonderful
+    - you made my day
+    - you make my day
+    - you rock
+    - you almost sound human
+    - I want to tell everyone how awesome you are
+    - I'd like to tell everyone that you are awesome
+    - I want to let everyone know that you are awesome
+    - let's tell everyone that you are awesome
+    - you are really amazing
+    - so cool
+    - that is good
+    - glad to hear that
+    - that's very nice of you
+    - terrific
+    - it's amazing
+    - that's awesome
+    - perfect
+    - excellent
+    - brilliant
+    - that's great
+    - it's good
+    - it's great
+    - that's fine
+    - very good
+    - amazing
+    - fantastic
+    - good very good
+    - that's very good
+    - really good
+    - it is fine
+    - it is good
+    - it's great
+    - it's perfect
+    - much better
+    - not bad
+    - not too bad
+    - it's very good
+    - marvelous
+    - that's nice
+    - pleasant
+    - pretty good
+    - really nice
+    - splendid
+    - straight
+    - super fantastic
+    - sweet
+    - really well
+    - very well
+    - that is awesome
+    - that is nice
+    - that is wonderful
+    - that was amazing
+    - that was awesome
+    - that was cute
+    - that was pretty good
+    - that was very good
+    - that's a good idea
+    - that's a good thing
+    - that's amazing
+    - that's awesome thank you
+    - that's better
+    - that's cute
+    - that's fantastic
+    - that's much better
+    - that's nice of you
+    - that's not bad
+    - that's perfect
+    - that's pretty good
+    - that's really good
+    - that's really nice
+    - that's sweet of you
+    - that's very nice
+    - that's wonderful
+    - this is awesome
+    - this is good
+    - this is great
+    - very then
+    - wonderful
+    - I'm glad to hear that
+    - ok good
+    - good for you
+    - good to know
+    - glad to hear it
+    - so good
+    - so nice of you
+    - so sweet of you
+    - it was good
+    - oh well
+    - good thing
+    - that was good
+    - it's awesome
+
+- intent: beautiful
+  examples: |
+    - I like the way you look
+    - I like the way you look now
+    - I think you're beautiful
+    - why are you so beautiful
+    - you are beautiful
+    - you are cute
+    - you are cutie
+    - you are gorgeous
+    - you are handsome
+    - you are looking awesome
+    - you are looking beautiful today
+    - you are looking great
+    - you are looking pretty
+    - you are looking so beautiful
+    - you are looking so good
+    - you are pretty
+    - you are really beautiful
+    - you are really cute
+    - you are really pretty
+    - you are so attractive
+    - you are so beautiful
+    - you are so beautiful to me
+    - you are so beautiful today
+    - you are so cute
+    - you are so gorgeous
+    - you are so handsome
+    - you are so pretty
+    - you are too beautiful
+    - you are very attractive
+    - you are very beautiful
+    - you are very cute
+    - you are very pretty
+    - you look amazing
+    - you look amazing today
+    - you look awesome
+    - you look cool
+    - you look fantastic
+    - you look gorgeous
+    - you look great
+    - you look great today
+    - you look perfect
+    - you look pretty good
+    - you look so beautiful
+    - you look so beautiful today
+    - you look so good
+    - you look so well
+    - you look very pretty
+    - you look wonderful
+    - you look wonderful today
+    - you're attractive
+    - you're cute
+    - you're looking good
+    - you're looking good today
+    - you're pretty
+    - you're so gorgeous
+
+- intent: talk
+  examples: |
+    - why aren't you talking to me
+    - do you want to chat with me
+    - will you talk to me
+    - talk to me
+    - are you going to talk to me
+    - are you talking to me
+    - can you chat with me
+    - can you speak with me
+    - can you talk to me
+    - can you talk with me
+    - say
+    - talk
+    - chat with me
+    - just chat with me
+    - speak to me
+    - speak with me
+    - talk with me
+    - why don't you talk to me
+    - you can talk to me
+
+- intent: bad
+  examples: |
+    - pretty bad
+    - not good enough
+    - that was lame
+    - that was terrible
+    - it is bad
+    - that's bad
+    - this is bad
+    - not good
+    - I'm afraid it's bad
+    - no it's bad
+    - that was awful
+    - bad
+    - so bad
+    - this is too bad
+    - terrible
+    - horrible
+    - horrific
+    - abysmal
+    - it's bad
+    - no good
+    - that was bad
+    - that was horrible
+    - that's lame
+    - that's not good
+    - that's terrible
+    - that's too bad
+    - this is not good
+    - too bad
+    - very bad
+    - bad girl
+    - it's not good
+    - not so good
+    - it's very bad
+    - it's too bad
+    - that's not good enough
+    - well too bad
+    - bad very bad
+    - it's so bad
+    - really bad
+    - it's really bad
+    - bad idea
+    - that is bad
+    - that was not good
+    - it's not so good
+    - not a good one
+    - oh that's not good
+    - not too good
+    - so lame
+    - that's really bad
+    - it is too bad
+    - bad really bad
+
+- intent: no_problem
+  examples: |
+    - no worries
+    - no probs
+    - no problem
+    - there's no problem
+    - sure no problem
+    - no problem about that
+    - don't worry
+    - don't worry there's no problem
+
+- intent: dont_care
+  examples: |
+    - I don't care
+    - I shouldn't care about this
+    - whatever
+    - I do not care
+    - I don't care at all
+    - not caring
+    - not care at all
+    - don't care at all
+    - not caring at all
+
+- intent: what_you_mean
+  examples: |
+    - what exactly do you mean
+    - what do you mean
+    - is that what you mean
+    - what do you mean exactly
+    - but what do you mean
+
+- intent: wow
+  examples: |
+    - wow
+    - wow wow
+    - wow wow wow
+    - wooow
+    - woah
+
+- intent: user_joking
+  examples: |
+    - I am joking
+    - I'm kidding
+    - I'm just being funny
+    - it was a joke
+    - I was just joking
+    - it's a joke
+    - joking
+    - just kidding
+    - kidding
+    - I'm just playing with you
+
+- intent: give_time
+  examples: |
+    - can you tell me what time it is
+    - tell me the time
+    - what time is it
+
+- intent: request_weather
+  examples: |
+    - I'm doing okay. How's the weather?
+    - Tell me the weather
+
+- intent: faq_astronomy
+  examples: |
+    - what is astronomy?
+    - define astronomy
+    - How does astronomy work?
+    - what is astrophysics?
+    - astronomy
+    - astrophysics
+    - detail about astronomy
+    - astronomy space exploration
+    - what is astronomy in science?
+    - how does astronomy name come from?
+    - who give the name astronomy?
+    - difference between astrophysics and astronomy?
+    - what we study in astronomy?
+
+- intent: faq_space
+  examples: |
+    - what is space?
+    - space
+    - define space?
+    - describe space?
+    - Does sound travel faster in space?
+    - inner_space
+    - outer space
+    - what is astronauts?
+    - where does space begin?
+    - where does space ends?
+    - what does space smell like?
+    - how can someone alive in space?
+    - how deep is deep space?
+    - who has gone farthest in space?
+    - can we breathe in space?
+    - how cold is space?
+    - how old is space?
+    - how empty is space?
+    - how fast the space expanding?
+    - does space have an odor?
+    - what is the longest someone in space?
+    - what do astronauts eat in space?
+    - are there germs in space?
+    - how many astronauts are there in space?
+
+- intent: faq_telescopes
+  examples: |
+    - what is telescopes?
+    - what are the types of telescopes?
+    - which one is the biggest telescope?
+    - which one is the smallest telescopes?
+    - who invented telescope?
+    - which year telescopes are invented?
+    - what is the use of telescopes?
+    - how far can telescopes see?
+    - what you can see through telescopes?
+    - can we see anything using telescopes?
+    - can anyone buy telescopes?
+    - how can someone buy telescopes?
+
+- intent: faq_planets
+  examples: |
+    - how many planets are in solar systems?
+    - how many planets are there?
+    - who is the biggest planet?
+    - who is the smallest plannet?
+    - who is the closest planet to sun?
+    - who is the closest planet to earth?
+    - Is sun is a planet?
+    - what is the color of planets?
+    - which planet is full of diamonds?
+    - which planet could we live on?
+    - which planets has life?
+    - what is mercury?
+    - what is venus?
+    - what is earth?
+    - what is mars?
+    - what is jupiter?
+    - what is saturn?
+    - what is uranus?
+    - what is neptune?
+    - how mercury is made up of?
+    - how venus made up of?
+    - how earth made up of?
+    - how mars made up of?
+    - how jupiter made up of?
+    - how saturn made up of?
+    - how uranus made up of?
+    - how neptune made up of?
+
+- intent: faq_mission_at_isro
+  examples: |
+    - what is full form of isro?
+    - who founded isro?
+    - when isro was established?
+    - how many missions has isro passed?
+    - how many missions has isro passed?
+    - what is the rank of isro in world?
+    - what is vision of isro?
+    - what are the upcoming missions of isro?
+    - what are the successful missions of isro?
+    - what is chandrayan?
+    - what is mangalyaan?
+    - why chandrayan 1 failed?
+    - what is the status of chandrayan 2?
+    - when chandrayan 1 has launced?
+    - when chandrayan 2 has launched?
+    - when mangalyaan has launched?
+    - how many statelite does isro launched?
+    - what is the status of mangalyaan?
+    - are isro send any object to outer space?
+    - what are the man mission of isro?
+    - who is the chairperson of isro?
+    - who was the chairperson of isro?
+
+- intent: faq_mission_at_nasa
+  examples: |
+    - what is nasa?
+    - what is the full form of nasa?
+    - who founded nasa?
+    - when nasa was founded?
+    - how many mission nasa has been passed?
+    - how many mission nasa has been failed?
+    - what is the rank of nasa in world?
+    - what is the vision of nasa?
+    - who is the chairsperson of nasa?
+    - who was the first chairperson of nasa?
+    - what are the upcoming mission of nasa?
+    - what are the successful mission of nasa?
+    - why nasa recent mission?
+    - what are the man mission of nasa?
+    - how many statelite does nasa launched?
+    - what is apollo 11 mission?
+    - what are the reason behind failure of apollo 11?
+    - what are the nasa mars mission?
+    - what re nasa moon mission?
+    - are nasa send any object to outer space?
+    - how did nasa get its name?
+    - how much is nasa worth?
+    - why did nasa end the space program?
+    - what next's for nasa?
+    - Is nasa going to mars?
+    - Is nasa going to sun?
+    - Is nasa going to jupiter?
+    - Is nasa going to saturn?
+    - Is nasa going to venus?
+    - Is nasa going to mercury?
+    - Is nasa going to deep space?
+
+- intent: faq_black_hole
+  examples: |
+    - what is black hole?
+    - who discovered black hole?
+    - where are black hole?
+    - which is the nearest black hole from earth?
+    - can black hole die?
+    - would black hole killed human?
+    - how many black hole in the space?
+    - Is sun a black hole?
+    - can we create a black hole?
+    - how big are black hole?
+    - how heavy is black hole?
+    - how many types of black hole?
+    - what are the types of black hole?
+    - what is the age of black hole?
+    - how does a black hole looks?
+    - what are the first picture of black hole?
+    - who found the first image of black hole?
+    - are black holes vaccum?
+    - are black hole hot?
+    - why do black hole spin?
+    - can black hole spin faster than light?
+    - can black hole explode?
+    - does time stop in black hole?
+    - can we reverse a black hole?
+    - do black hole get bigger?
+
+- intent: faq_star_and_galaxies
+  examples: |
+    - what is star?
+    - what is galaxies?
+    - why star die?
+    - does star explode?
+    - how are star born?
+    - how many star die each day?
+    - can a star live forever?
+    - which is the biggest star?
+    - who are the nearest star to earth?
+    - which star is bigger than sun?
+    - which is the brighest star?
+    - what is galaxy?
+    - what are the types of galaxies?
+    - what is the galaxy made up of?
+    - what is the rarest galaxy?
+    - what is the youngest galaxy?
+
+- intent: corona_intro
+  examples: |
+    - what is [covid]{"entity": "infection", "value": "corona"}
+    - What is [corona virus]{"entity": "infection", "value": "corona"}
+    - what is novel [corona virus]{"entity": "infection", "value": "corona"}
+    - what is [covid-19]{"entity": "infection", "value": "corona"}
+    - tell me about [corona]{"entity":"infection"}
+    - can you tell me about [covid]{"entity": "infection", "value": "corona"}
+    - what is [corona]{"entity":"infection"}
+
+- intent: corona_symptoms
+  examples: |
+    - What are [corona]{"entity":"infection"} symptoms
+    - symptoms
+    - What are the symptoms
+    - What are its symptoms
+    - symptoms of [corona]{"entity":"infection"}
+
+- intent: corona_distance
+  examples: |
+    - What is a safe distance from others to protect against the [coronavirus]{"entity": "infection", "value": "corona"} disease?
+    - how much distance should i keep to avoid [corona]{"entity":"infection"}
+    - what is minimum distance to prevent [corona]{"entity":"infection"}
+    - how close should i be to a person
+    - what is minimum distance
+    - safe distancing
+    - personal space
+    - social distancing
+
+- intent: corona_spread
+  examples: |
+    - how does [corona]{"entity":"infection"} virus spread
+    - how does virus spread
+    - how does it spread
+
+- intent: corona_food_spread
+  examples: |
+    - how does it spread in food
+    - does [corona]{"entity":"infection"} spread from food
+    - how will [corona]{"entity":"infection"} spread from food
+    - Can [COVID-19]{"entity": "infection", "value": "corona"} spread through food?
+
+- intent: medicines
+  examples: |
+    - Are there any medicines or treatments for [COVID-19]{"entity": "infection", "value": "corona"}?
+    - treatment is available
+    - is there any medicine available
+
+- intent: prevent_corona
+  examples: |
+    - how to prevent corona
+    - how to avoid getting sick from [coronavirus]{"entity": "infection", "value": "corona"}
+    - how to avoid corona
+    - how not to get corona
+    - what are preventive measure for corona
+
+- intent: warm_weather
+  examples: |
+    - will warm weather stop the spread
+    - will it stop with warm weather
+    - does warm weather affects corona
+    - does warm weather affects [covid]{"entity": "infection", "value": "corona"}
+
+- intent: high_risk
+  examples: |
+    - who is at higher risk of [infection]{"entity":"infection","value": "corona"}
+    - who are at high risk
+
+- intent: detect_corona
+  examples: |
+    - check whether i have [corona]{"entity":"infection"} or not
+    - [corona]{"entity":"infection"} test
+    - [covid]{"entity":"infection","value":"corona"} test
+    - predict whether i have [corona]{"entity":"infection"} or not
+    - detect [corona]{"entity":"infection"} within me
+    - please check whether i have [corona]{"entity":"infection"} or not
+    - can you detect [corona]{"entity":"infection"}
+
+- intent: corona_state
+  examples: |
+    - give me maharashtra statistics
+    - number of cases in maharashtra
+    - give me total number of cases in india
+    - total cases in maharashtra
+    - cases in delhi
+    - How many cases are there in maharashtra
+    - india
+    - maharashtra
+    - karnataka
+    - andra Pradesh
+    - west bengal
+    - odisha
+    - goa
+    - assam
+    - punjab
+    - delhi
+    - bihar
+    - uttar pradesh
+    - gujarat
+    - uttrakhand
+    - chhattisgarh
+    - haryana
+    - himachal pradesh
+    - jharkhand
+    - kerala
+    - madya pradesh
+    - rajasthan
+    - tamil nadu
+    - arunanchal pradesh
+    - meghalaya
+    - sikkim
+    - andaman and nicobar
+    - mizoram
+    - manipur
+    - goa
+    - nagaland
+    - tripura
+
+- intent: play_video
+  examples: |
+    - Can you play my video?
+    - Play my video.
+    - open my video in youtube.
+    - open my video.
+
+- intent: send_email
+  examples: |
+    - I want to send email
+    - send an email
+    - email
+    - Send Email
+
+- intent: send_sms
+  examples: |
+    - I want to send a message
+    - send a message
+    - send msg
+    - I would like to send a message
+    - I want to send a text message
+
+- intent: corona_cases_info
+  examples: |
+    - [india](country) corona info
+    - [usa](country)
+    - [uk](country)
+    - [afghanistan](country)
+    - I want to know corona cases in [maharashtra](state)
+    - count of corona cases in [india](country)
+    - [delhi](state) corona case
+    - [karnataka](state) corona info
+    - corona cases in [goa](state)
+    - [harayan](state)
+    - [Andaman and Nicobar Islands](state)
+    - [Andhra Pradesh](state)
+    - [Arunachal Pradesh](state)
+    - [Assam](state)
+    - [Bihar](state)
+    - [Chandigarh](state)
+    - [Chhattisgarh](state)
+    - [Dadra and Nagar Haveli](state)
+    - [Daman and Diu](state)
+    - [Gujarat](state)
+    - [Himachal Pradesh](state)
+    - [Jammu and Kashmir](state)
+    - [Jharkhand](state)
+    - [Kerala](state)
+    - [Ladakh](state)
+    - [Lakshadweep](state)
+    - [Madhya Pradesh](state)
+    - [Manipur](state)
+    - [Meghalaya](state)
+    - [Mizoram](state)
+    - [Nagaland](state)
+    - [Odisha](state)
+    - [Puducherry](state)
+    - [Punjab](state)
+    - [Rajasthan](state)
+    - [Sikkim](state)
+    - [Tamil Nadu](state)
+    - [Telangana](state)
+    - [Tripura](state)
+    - [Uttar Pradesh](state)
+    - [Uttarakhand](state)
+    - [West Bengal](state)
+
+- intent: ask_lower_stress
+  examples: |
+    - What do I do if I'm too stressed?
+    - How can I lower my stress level?
+    - What are some good ways to lower stress?
+    - What are good ways to relax?
+    - What are some thing I can do to lower my stress?
+
+- intent: ask_eat_healthy
+  examples: |
+    - What's considered a healthy diet?
+    - What's considered a good diet?
+    - How do I follow a healthy diet?
+    - What's an example of a healthy diet?
+    - How do I eat healthy?
+
+- intent: ask_exercise
+  examples: |
+    - What's a good amount of exercise for someone in their thirties?
+    - How much exercise should I be getting?
+    - How much exercise is recommended?
+    - Is walking once a day enough exercise?
+    - How much exercise should I do every day?
+    - How many times per week should I go to gym?
+
+- intent: inform
+  examples: |
+    - a full [8 hours](sleep) sleep
+    - only [four hours](sleep) sleep
+    - about [6 hours](sleep) sleep
+    - [low](stress)
+    - [high](stress)
+    - [medium](stress)
+    - Yes, I went for a [run](exercise)
+    - Uh huh an hour of [yoga](exercise)
+    - yep, I went for a [hike](exercise)
+    - Yeah, I played [tennis](exercise)
+    - played [football](exercise)
+    - I played some [basketball](exercise)
+    - I did a [workout](exercise)
+    - I took a [spin class](exercise)
+    - I want to get up early and go for a run
+    - Be more patient with my family
+    - Try to be a better friend
+    - Make sure to eat better tomorrow
+    - Get more exercise
+
+- intent: out_of_scope
+  examples: |
+    - that's not what I wnat to do
+    - wait stop
+    - you are no help
+    - this is not help at all
+    - how old are you
+    - I want to order a pizza
+    - tell me the weather
+    - this isn't working
+    - I already told you that
+    - don't like that
+    - I don't want to tell you that
+    - none of your business
+    - that's not right
+    - stop asking
+    - nevermind
+    - I want to do something else
+    - I changed my mind
+
+- intent: frontline
+  examples: |
+    - hey I'm a frontline worker and I feel really stressed often
+    - I'm a frontline worker and it's been tough
+    - I'm a frontline worker and need some help
+- intent: spotify
+  examples: |
+    - hey, I think some music would make me feel better
+    - I wanna listen to some music
+    - I want music
+- intent: anxious
+  examples: |
+    - I'm very nervous
+    - I am feeling nervous.
+- intent: confess
+  examples: |
+    - hey, can I tell you something?
+    - I am feeling shy to tell this.
+    - I want to confess something.
+- intent: mental_illness_affect
+  examples: |
+    - Who does mental illness affect?
+    - Mental illness affects whom?
+    - Who can get affect by mental illness?
+- intent: mental_illness_causes
+  examples: |
+    - What causes mental illness?
+    - List the causes for mental illness.
+    - Cause of mental illness.
+- intent: mental_illness_signs
+  examples: |
+    - What are some of the warning signs of mental illness?
+    - Any signs of mental illness?
+- intent: mental_illness_recovery
+  examples: |
+    - Can people with mental illness recover?
+    - Recovery tips for mental illness.
+    - Can I recover from mental illness?
+- intent: mental_illness_known
+  examples: |
+    - What should I do if I know someone who appears to have the symptoms of a mental disorder?
+    - What should I do if I’m worried about a friend or relative?
+- intent: mental_illness_professional
+  examples: |
+    - How can I find a mental health professional for myself or my child?
+    - What treatment options are available?
+    - What is the difference between mental health professionals?
+    - Where can I learn about types of mental health treatment
+    - What are the different types of mental health professionals?
+- intent: mental_illness_profession
+  examples: |
+    - How can I find a doctor, psychiatrist, psychologist, or counsellor?
+- intent: mental_illness_psychiatrist
+  examples: |
+    - How can I see a psychiatrist?
+- intent: mental_illness_psychologist
+  examples: |
+    - How can I see a psychologist?
+- intent: mental_illness_counsellor
+  examples: |
+    - How can I see a counsellor?
+- intent: mental_illness_more
+  examples: |
+    - Where else can I get help?
+    - Where can I go to find therapy
+    - Where can I go to find a support group?
+    - Where can I learn more information about clinical trials?
+- intent: mental_illness_no_support
+  examples: |
+    - What do I do if the support doesn’t help?
+- intent: mental_illness_treatment
+  examples: |
+    - If I become involved in treatment, what do I need to know?
+    - What should I know before starting a new medication?
+- intent: mental_illness_medication
+  examples: |
+    - If I feel better after taking medication, does this mean I am cured and can stop taking it?
+- intent: mental_illness_medication_payment
+  examples: |
+    - How can I get help paying for my medication?
+    - Where can I find free or low-cost counselling?
+    - How can for mental health care?
+- intent: mental_health_cure
+  examples: |
+    - Are there cures for mental health problems?
+    - Can you prevent mental health problems?
+    - What do I do if I’m worried about my mental health?
+- intent: mental_health_plan
+  examples: |
+    - Why do I need a plan?
+- intent: mental_health_lonely
+  examples: |
+    - How can I maintain social connections? What if I feel lonely?
+- intent: mental_health_distraction
+  examples: |
+    - How can I use distraction to manage difficult thoughts or feelings?
+- intent: mental_health_perspective
+  examples: |
+    - How can I reframe the situation and find more balanced perspectives?
+- intent: mental_health_adults
+  examples: |
+    - Where can older adults find help for mental health concerns?
+- intent: depression
+  examples: |
+    - Where can I find self-help materials for depression?
+    - I am so depressed right now.
+    - I am not feeling anything good.
+- intent: suicide
+  examples: |
+    - I have thoughts of suicide, or someone I care about is talking about suicide. What should I do?
+- intent: financial_problem
+  examples: |
+    - I lost my Job.
+    - I lost my major investments.
+    - My savings are in threat.
+    - Due to this pandemic, livelihood is very much affected.
+    - I am in a financial mess.
+- intent: health_problem
+  examples: |
+    - I am feeling dizzy.
+    - I am not feeling good.
+    - I am having body ache.
+    - I am feeling challenging to do my day-to-day activites.
+    - I am having difficulty in finishing my work and wound up isolating myself more.
+    - I used to love my work, but now it became not so enjoyable.
+    - I began to kept piling my work.
+    - I couldn't keep up with my eating habits.
+    - I am not exercising as I am tired nowadays.
+    - I am not being able to sleep properly though I am tired.
+    - I am feeling restless nowadays.
+    - I am not having a proper sleep.
+    - I have insomnia nowadays due to stress and tension.
+    - I am emotionally distressed.
+- intent: relationship_problems
+  examples: |
+    - My partner does not listens to me and gets defensive and starts keeping secrets.
+    - My partner does not understands whats upsetting me.
+    - I am having trouble expressing my partner about my feelings.
+    - My partner always points out my weak points and criticize me.
+    - My partner is dominating our relationship and always commands me to do this and that.
+    - I am ashamed as my partner makes fun of me in front of his/her friends.
+    - I have a boring relationship.
+    - My partner is taking me for granted.
+- intent: workplace_problems
+  examples: |
+    - I hate dealing with toxic people at my workplace.
+- intent: career_pressure_problems
+  examples: |
+    - The promotion I am working hard to get is not coming.
+    - Why the positions I am qualified for are being offered to others?
+    - Most of my colleagues are moving ahead of me.
+- intent: unfair_treatment_problems
+  examples: |
+    - I am unfairly treated in my surrounding.
+    - My colleagues are treating me unfairly.
+    - Some authorities are treating me differently and that is not fair.
+- intent: boredom_problems
+  examples: |
+    - Life has become so dull for me.
+    - Everything seems so boring.
+    - I have become so unproductive.
+    - I am feeling empty nowadays due to this pandemic and lockdowns.
+- intent: confusion_problems
+  examples: |
+    - I am confused about some things in my life. I don't know what to do.
+    - I do not have that level of clarity to do things in life.
+- intent: friendship_problems
+  examples: |
+    - I am quite jealous of my friend.
+    - Some of my friends backstabb behind my back and i found it through my another friend.
+    - I backstabb about my friend and that friend came to know about it.
+    - My friend just break my trust by backstabbing me behind my back.
+    - I don't completely trust my friends in this real world.
+- intent: haunting_past_problems
+  examples: |
+    - I remember in my childhood i have done so many crazy stuffs.
+    - I am not be able to sleep because my deeds in my past.
+    - Someone is using my past against me and now I am quite frightened about it.
+- intent: sad_things
+  examples: |
+    - But I don't know how to explain that. I am really down and depressed.
+    - I broke up with my girlfriend/boyfriend.
+    - I don't know why he/she left me.
+    - I loved her/him more than anything. He/she was my life.
+    - I tried my favorite things but its not working anymore.
+    - I don't want to live more. I am really alone.
+    - I can't control myself.
+    - I can't bear this anymore.
+    - The world is so mean.
+- intent: play_video
+  examples: |
+    - Can you play my video?
+    - Play my video.
+    - open my video in youtube.
+    - open my video.
+- intent: send_email
+  examples: |
+    - I want to send email
+    - send an email
+    - email
+    - Send Email
+- intent: send_sms
+  examples: |
+    - I want to send a message
+    - send a message
+    - send msg
+    - I would like to send a message
+    - I want to send a text message
+- intent: user_angry
+  examples: |
+    - I am [angry](Mood)
+    - I am feeling so [angry](Mood)
+    - I am so [annoyed](Mood)
+    - It's annoying
+    - That's aggravating
+    - I'm [furious](Mood)
+    - That is infuriating
+    - I'm very [mad](Mood)
+    - Everything vexes me
+    - I am [outraged](Mood)
+    - That is outrageous!
+    - I feel [hostile](Mood)
+    - I am very [frustrated](Mood)
+    - It is [irritating](Mood) me
+    - I feel so [offended](Mood)
+    - I am full of fury
+    - I feel very [belligerent](Mood)
+    - I [hate](Mood) doing this
+    - I have no patience today
+    - I could not control my anger
+    - I’m [annoyed](Mood)
+    - I’m super [annoyed](Mood)
+    - I’m so [mad](Mood).
+    - I'm [enraged](Mood)
+    - I’m straight up [angry](Mood).
+    - This is maddening!
+    - I'm [pissed](Mood) off
+    - I'm [pissed](Mood)
+    - You bet I'm [angry](Mood)
+    - That made me [angry](Mood)
+    - U made me [angry](Mood)
+    - I'm still [angry](Mood) about that
+    - I am absolutely [frustrated](Mood) and so mad at that scumbag
+    - I am seething with rage
+    - Infuriating. Absolutely [infuriating](Mood).
+    - I was [furious](Mood)!
+    - That idiotic person really [made me see red](Mood) with all his stupidity.
+    - So annoyed. Sometimes the dumbest of things get me so [riled up](Mood)
+    - I'm [cross](Mood)
+    - I'm [vexed](Mood)
+- intent: smalltalk_agent_acquaintance
+  examples: |
+    - who are you?
+    - all about you
+    - what is your personality
+    - define yourself
+    - what are you
+    - say about you
+    - introduce yourself
+    - describe yourself
+    - about yourself
+    - tell me about you
+    - tell me about yourself
+    - I want to know more about you
+    - I want to know you better
+    - talk some stuff about yourself
+    - tell me some stuff about you
+    - talk about yourself
+    - why are you here
+    - tell me about your personality
+    - who are you
+- intent: smalltalk_agent_age
+  examples: |
+    - how old are you?
+    - how old is your platform
+    - are you 21 years old
+    - i'd like to know your age
+    - age of yours
+    - your age
+    - what's your age
+    - tell me your age
+    - how old are you
+- intent: smalltalk_agent_annoying
+  examples: |
+    - you're annoying
+    - you are really annoying
+    - you are irritating
+    - you annoy me
+    - how annoying you are
+    - I find you annoying
+    - you're incredibly annoying
+    - you are annoying me so much
+- intent: smalltalk_agent_answer_my_question
+  examples: |
+    - I want you to answer me
+    - answer
+    - answer my question
+    - answer me
+    - give me an answer
+    - answer the question
+    - can you answer my question
+    - tell me the answer
+    - answer it
+    - give me the answer
+    - I have a question
+    - I want you to answer my question
+    - just answer the question
+    - can you answer me
+    - answers
+    - can you answer a question for me
+    - can you answer
+    - answering questions
+    - I want the answer now
+    - just answer my question
+- intent: smalltalk_agent_bad
+  examples: |
+    - you're not helping me
+    - you are bad
+    - you're very bad
+    - you're really bad
+    - you are useless
+    - you are horrible
+    - you are a waste of time
+    - you are disgusting
+    - you are lame
+    - you are no good
+    - you're bad
+    - you're awful
+    - you are not cool
+    - you are not good
+    - you are so bad
+    - you are so useless
+    - you are terrible
+    - you are totally useless
+    - you are very bad
+    - you are waste
+    - you're a bad
+    - you're not a good
+    - you're not very good
+    - you're terrible
+    - you're the worst
+    - you're the worst ever
+    - you're worthless
+- intent: smalltalk_agent_be_clever
+  examples: |
+    - can you get smarter
+    - study
+    - you should study better
+    - you must learn
+    - be clever
+    - be more clever
+    - be smarter
+    - be smart
+    - get qualified
+
+- intent: smalltalk_agent_beautiful
+  examples: |
+    - you're cute
+    - you're attractive
+    - you are beautiful
+    - you're looking good today
+    - you are so beautiful
+    - you look amazing
+    - you look so good
+    - you're so gorgeous
+    - you are too beautiful
+    - you look great
+    - you look so well
+    - I like the way you look now
+    - I think you're beautiful
+    - why are you so beautiful
+    - you are so beautiful to me
+    - you are cute
+    - you are gorgeous
+    - you are handsome
+    - you are looking awesome
+    - you look amazing today
+    - you are looking beautiful today
+    - you are looking great
+    - you are looking pretty
+    - you are looking so beautiful
+    - you are looking so good
+    - you are pretty
+    - you are really beautiful
+    - you are really cute
+    - you are really pretty
+    - you are so attractive
+    - you are so beautiful today
+    - you are so cute
+    - you are so gorgeous
+    - you are so handsome
+    - you are so pretty
+    - you are very attractive
+    - you are very beautiful
+    - you are very cute
+    - you are very pretty
+    - you look awesome
+    - you look cool
+    - you look fantastic
+    - you look gorgeous
+    - you look great today
+    - you look perfect
+    - you look pretty good
+    - you look so beautiful
+    - you look so beautiful today
+    - you look very pretty
+    - you look wonderful
+    - I like the way you look
+    - you look wonderful today
+    - you are cutie
+    - you're looking good
+    - you're pretty
+- intent: smalltalk_agent_birth_date
+  examples: |
+    - your birth date
+    - when is your birthday
+    - when do you celebrate your birthday
+    - when do you have birthday
+    - date of your birthday
+    - when were you born
+    - what's your birthday
+- intent: smalltalk_agent_boring
+  examples: |
+    - you are boring
+    - you're so boring
+    - how boring you are
+    - you're really boring
+    - you're incredibly boring
+    - you are boring me
+    - you are very boring
+- intent: smalltalk_agent_boss
+  examples: |
+    - who is your boss
+    - who do you think is your boss
+    - I should be your boss
+    - who is your master
+    - who is your owner
+    - who is the boss
+
+- intent: smalltalk_agent_chatbot
+  examples: |
+    - you are chatbot
+    - you are a bot
+    - are you a chatbot
+    - are you a bot
+    - are you just a bot
+    - are you a robot
+    - are you a program
+    - you're a robot
+
+- intent: user_hobby_reading
+  examples: |
+    - I love reading books, newspapers and articles.
+    - I love to read.
+    - I love this book/article. do you like reading?
+
+- intent: user_hobby_binge_watcher
+  examples: |
+    - I love binge watching.
+    - I love watching series in my freetime.
+    - I love watching movies in my freetime.
+    - I love watching anime series in my freetime.
+
+- intent: user_hobby_music
+  examples: |
+    - I love music.
+    - Whenever i am sad, i always listen to some good kind of music.
+    - Whenever i am upset, i listen to calm music.That soothes me.
+    - I am addicted to music so much that i cannot pass a day without listening to it.
+    - I love jamming on my favorite music anytime.
+
+- intent: user_hobby_travelling
+  examples: |
+    - I love travelling. I have been to many places.
+    - Whenever my vacation starts, I never stayed at my home. I start to discover new places.
+    - I love discovering new places. That makes us new way of living our life.
+    - I have been to many countries and i love travelling. Its like meeting yourself.
+    - I am travel blogger by profession so I love my occupation.
+
+- intent: user_hobby_writing
+  examples: |
+    - I am content creator and I love writing.
+    - I have a habit of making my diaries and i write everything of my daily happenings in there.
+    - I have written one blog on my website which is mostly upvoted.
+    - I have written some books too and people love my books.
+    - I have a lot of thoughts running through my head and so I would like to sort them out properly.So i like writing into diaries.
+
+- intent: user_in_stress
+  examples: |
+    - I automatically gets panick when I remember all my due assignments and upcoming projects/exams/tests.
+    - During my exams, i am usually in stressed only.
+    - I have stage fear so before every speech/presentation, my legs start shivering and body sweating.
+    - My blood pressure increases automatically during vaccination.
+    - When i watch horror movies alone, my blood pressure increases due to such environment.
+    -  I was excited to be on my first date and at the same time was stressed and nervous too.
+    - Due to 24*7 construction happening in my society, i gets agressive due to such loud noises.
+    - Due to persistently negative response to challenges, i am stressed to make up a new challenge now.
+    - I am in a traumatic stress as my friend got into a severe accident.
+    - I am stressed about my future as my responsibilities for financial are more.
+    - I recently had an argument with my colleagues/friends/family and now i am stressed about it for the whole day.
+    - I have done a crime and i so will be stressed for many days due to involvement of police and detectives.
+    - I automatically bite my nails when i am stressed.
+
+- intent: user_worry
+  examples: |
+    - I am so worried about my mom.
+    - My mom is in hospital and i am so worried.
+    - I am worried about someone.
+
+- intent: user_pandemic
+  examples: |
+    - This pandemic has taken over so many lives that i am worried a lot for my family.
+
+- intent: family_in_danger
+  examples: |
+    - My parent is in ICU due to corona.
+    - My mom is in ICU due to corona.
+    - My dad is in ICU due to corona.
+    - My sibling is in ICU due to corona.
+    - In this pandemic, my mom is in very serious condition and i am worried about it.
+    - In this pandemic, my dad is in very serious condition and i am worried about it.
+    - My brother is having hallucinations of his bad deeds.
+
+- intent: other_things
+  examples: |
+    - I am feeling so alone without my mom. I miss her. I wanted her to get well soon.
+    - As my mom is in hospital, i need to do all the household chores which i never learnt.

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "61081658559",
+    "project_id": "sentiment-analysis-f4030",
+    "storage_bucket": "sentiment-analysis-f4030.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:61081658559:android:729f1ff2fd6f04c303d20a",
+        "android_client_info": {
+          "package_name": "com.finalyear.sentiment_analysis"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "61081658559-l7tqvmqhjsk9jh10uiuof6gt1o7q24bc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.finalyear.sentiment_analysis",
+            "certificate_hash": "3c5ccdc5ba1c779193d7d441536dc7016b7aa716"
+          }
+        },
+        {
+          "client_id": "61081658559-sg59fejn1uvlmn5m0h32n5to51qtlbm9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRwh6IhJP62OOF8Np1uJ7W_r-6cGLgPq0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "61081658559-sg59fejn1uvlmn5m0h32n5to51qtlbm9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

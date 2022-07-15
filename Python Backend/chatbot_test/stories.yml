@@ -1,0 +1,805 @@
+version: "2.0"
+
+stories:
+- story: hello world path
+  steps:
+    - intent: hello_world
+    - action: action_hello_world
+
+- story: say goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: say author
+  steps:
+  - intent: author
+  - action: utter_author
+
+- story: bored
+  steps:
+  - intent: user_bored
+  - action: utter_cheer_up
+
+- story: bot
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - intent: bot_origin
+  - action: utter_bot_origin
+  - intent: bot_real
+  - action: utter_bot_real
+  - intent: bot_home
+  - action: utter_bot_home
+  - intent: bot_age
+  - action: utter_bot_age
+
+- story: happy path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: say inquire
+  steps:
+  - intent: inquire
+  - action: utter_info
+  - action: utter_policy
+  - intent: appreciate
+  - action: utter_thanks
+
+- story: math facts
+  steps:
+  - intent: math_facts
+  - action: get_math_fact
+  - action: get_math_fact
+
+- story: day facts
+  steps:
+  - intent: day_facts
+  - action: get_date_fact
+  - action: get_date_fact
+
+- story: get jokes
+  steps:
+  - intent: jokes
+  - action: get_joke
+  - action: get_joke
+
+- story: mental health path
+  steps:
+  - intent: mental_health_intro
+  - action: utter_mh_intro
+
+- story: mental illness path
+  steps:
+  - intent: mental_illness_intro
+  - action: utter_mi_intro
+
+- story: mhi difference path
+  steps:
+  - intent: mental_health_illness_difference
+  - action: utter_mhi_difference
+
+- story: early signs path
+  steps:
+  - intent: early_signs
+  - action: utter_early_signs
+  - action: utter_consult_doctor
+  - action: utter_console
+
+- story: path about time
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: give_time
+    - action: action_show_time
+
+- story: swear
+  steps:
+  - intent: swear
+  - action: utter_swear
+
+- story: clever
+  steps:
+  - intent: smart
+  - action: utter_smart
+
+- story: beautiful
+  steps:
+  - intent: beautiful
+  - action: utter_beautiful
+
+- story: anger
+  steps:
+  - intent: mood_anger
+  - action: utter_angry
+
+- story: meaning of life
+  steps:
+  - intent: life
+  - action: utter_meaning_life
+
+- story: marry me
+  steps:
+  - intent: marry
+  - action: utter_marry_me
+
+- story: faq astronomy
+  steps:
+    - intent: faq_astronomy
+    - action: action_faq_astronomy
+
+- story: faq space
+  steps:
+    - intent: faq_space
+    - action: action_faq_space
+    - intent: greet
+    - action: utter_greet
+    - intent: deny
+    - action: utter_goodbye
+
+- story: faq telescopes
+  steps:
+    - intent: faq_telescopes
+    - action: action_faq_telescopes
+
+- story: faq planets
+  steps:
+    - intent: faq_planets
+    - action: action_faq_planets
+    - intent: greet
+    - action: utter_greet
+    - intent: deny
+    - action: utter_goodbye
+
+- story: faq mission at isro
+  steps:
+    - intent: faq_mission_at_isro
+    - action: action_faq_mission_at_isro
+    - intent: greet
+    - action: utter_greet
+    - intent: deny
+    - action: utter_goodbye
+
+- story: faq mission at nasa
+  steps:
+    - intent: faq_mission_at_nasa
+    - action: action_faq_mission_at_nasa
+    - intent: greet
+    - action: utter_greet
+    - intent: deny
+    - action: utter_goodbye
+
+- story: faq black hole
+  steps:
+    - intent: faq_black_hole
+    - action: action_faq_black_hole
+    - intent: greet
+    - action: utter_greet
+    - intent: deny
+    - action: utter_goodbye
+
+- story: faq star and galaxies
+  steps:
+    - intent: faq_star_and_galaxies
+    - action: action_faq_star_and_galaxies
+    - intent: greet
+    - action: utter_greet
+    - intent: deny
+    - action: utter_goodbye
+
+- story: what is corona
+  steps:
+    - intent: corona_intro
+    - action: utter_corona_intro
+
+- story: Social Distancing
+  steps:
+  - intent: corona_distance
+  - action: utter_corona_distance
+
+- story: Prevention
+  steps:
+  - intent: prevent_corona
+  - action: utter_prevent_corona
+
+- story: medicines
+  steps:
+  - intent: medicines
+  - action: utter_medicines
+
+- story: what are its symptoms
+  steps:
+  - intent: corona_symptoms
+  - action: utter_corona_symptoms
+
+- story: how does corona spread
+  steps:
+  - intent: corona_spread
+  - action: utter_corona_spread
+
+- story: corona food spread
+  steps:
+  - intent: corona_food_spread
+  - action: utter_corona_food_spread
+
+- story: corona warm weather
+  steps:
+  - intent: warm_weather
+  - action: utter_warm_weather
+
+- story: corona high risk
+  steps:
+  - intent: high_risk
+  - action: utter_high_risk
+
+- story: detect_corona affirm
+  steps:
+  - intent: detect_corona
+  - action: utter_detect_corona
+  - intent: affirm
+  - action: utter_covid_test_started
+
+- story: detect_corona affirm
+  steps:
+  - intent: detect_corona
+  - action: utter_detect_corona
+  - intent: deny
+  - action: utter_what_i_can_help_u_with
+  - intent: help
+  - action: utter_help
+
+- story: corona tracker path
+  steps:
+  - intent: corona_cases_info
+  - action: corona_cases_action
+
+- story: beginner path affirm
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: corona_intro
+  - action: utter_corona_intro
+  - intent: corona_spread
+  - action: utter_corona_spread
+  - intent: corona_symptoms
+  - action: utter_corona_symptoms
+  - intent: prevent_corona
+  - action: utter_prevent_corona
+  - intent: detect_corona
+  - action: utter_detect_corona
+  - intent: affirm
+  - action: utter_covid_test_started
+
+- story: beginner path deny
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: corona_intro
+  - action: utter_corona_intro
+  - intent: corona_spread
+  - action: utter_corona_spread
+  - intent: corona_symptoms
+  - action: utter_corona_symptoms
+  - intent: prevent_corona
+  - action: utter_prevent_corona
+  - intent: detect_corona
+  - action: utter_detect_corona
+  - intent: deny
+  - action: utter_what_i_can_help_u_with
+  - intent: help
+  - action: utter_help
+
+- story: happy play video path
+  steps:
+    - intent: play_video
+    - action: action_video
+
+- story: quote_path_one
+  steps:
+    - intent: request_quote
+    - action: action_fetch_quote
+
+- story: quote_path_two
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: request_quote
+    - action: action_fetch_quote
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: fun_fact_path_one
+  steps:
+    - intent: request_fun_fact
+    - action: action_fetch_fun_fact
+
+- story: fun_fact_path_two
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: request_fun_fact
+    - action: action_fetch_fun_fact
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: ask diet questions
+  steps:
+    - intent: ask_eat_healthy
+    - action: utter_diet_info
+
+- story: ask stress question
+  steps:
+    - intent: ask_lower_stress
+    - action: utter_stress_info
+
+- story: ask exercise questions
+  steps:
+    - intent: ask_exercise
+    - action: utter_exercise_info
+
+- story: survey happy path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: affirm
+    - action: utter_slots_values
+    - intent: thankyou
+    - action: utter_no_worries
+    - action: utter_goodbye
+
+- story: no survey
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: deny
+    - action: utter_goodbye
+
+- story: user angry path
+  steps:
+    - intent: user_angry
+    - action: utter_angry_signs
+    - action: utter_console
+    - intent: mood_unhappy
+    - action: utter_cheer_up
+
+- story: path_smalltalk_agent_acquaintance
+  steps:
+    - intent: smalltalk_agent_acquaintance
+    - action: utter_smalltalk_agent_acquaintance
+
+- story: path_smalltalk_agent_age
+  steps:
+    - intent: smalltalk_agent_age
+    - action: utter_smalltalk_agent_age
+
+- story: path_smalltalk_agent_annoying
+  steps:
+    - intent: smalltalk_agent_annoying
+    - action: utter_smalltalk_agent_annoying
+
+- story: path_smalltalk_agent_answer_my_question
+  steps:
+    - intent: smalltalk_agent_answer_my_question
+    - action: utter_smalltalk_agent_answer_my_question
+
+- story: path_smalltalk_agent_bad
+  steps:
+    - intent: smalltalk_agent_bad
+    - action: utter_smalltalk_agent_bad
+
+- story: path_smalltalk_agent_beautiful
+  steps:
+    - intent: smalltalk_agent_beautiful
+    - action: utter_smalltalk_agent_beautiful
+
+- story: path_smalltalk_agent_birth_date
+  steps:
+   - intent: smalltalk_agent_birth_date
+   - action: utter_smalltalk_agent_birth_date
+
+- story: path_smalltalk_agent_boring
+  steps:
+    - intent: smalltalk_agent_boring
+    - action: utter_smalltalk_agent_boring
+
+- story: path_smalltalk_agent_boss
+  steps:
+    - intent: smalltalk_agent_boss
+    - action: utter_smalltalk_agent_boss
+
+- story: path_smalltalk_agent_chatbot
+  steps:
+    - intent: smalltalk_agent_chatbot
+    - action: utter_smalltalk_agent_chatbot
+
+- story: path_smalltalk_agent_clever
+  steps:
+    - intent: smalltalk_agent_clever
+    - action: utter_smalltalk_agent_clever
+
+- story: happy play video path
+  steps:
+    - intent: play_video
+    - action: action_video
+
+- story: happy frontline path
+  steps:
+    - intent: frontline
+    - action: utter_frontline
+
+- story: happy spotify path
+  steps:
+    - intent: spotify
+    - action: utter_spotify
+
+- story: happy nervous path
+  steps:
+    - intent: anxious
+    - action: utter_nervous
+
+- story: happy confess path
+  steps:
+    - intent: confess
+    - action: utter_confess
+
+- story: happy mental_illness_affect path
+  steps:
+    - intent: mental_illness_affect
+    - action: utter_mental_illness_affect
+
+- story: happy mental_illness_causes path
+  steps:
+    - intent: mental_illness_causes
+    - action: utter_mental_illness_causes
+
+- story: happy mental_illness_signs path
+  steps:
+    - intent: mental_illness_signs
+    - action: utter_mental_illness_signs
+
+- story: happy mental_illness_recovery path
+  steps:
+    - intent: mental_illness_recovery
+    - action: utter_mental_illness_recovery
+
+- story: happy mental_illness_known path
+  steps:
+    - intent: mental_illness_known
+    - action: utter_mental_illness_known
+
+- story: happy mental_illness_professional path
+  steps:
+    - intent: mental_illness_professional
+    - action: utter_mental_illness_professional
+
+- story: happy mental_illness_profession path
+  steps:
+    - intent: mental_illness_profession
+    - action: utter_mental_illness_profession
+
+- story: happy mental_illness_psychiatrist path
+  steps:
+    - intent: mental_illness_psychiatrist
+    - action: utter_mental_illness_psychiatrist
+
+- story: happy mental_illness_psychologist path
+  steps:
+    - intent: mental_illness_psychologist
+    - action: utter_mental_illness_psychologist
+
+- story: happy mental_illness_counsellor path
+  steps:
+    - intent: mental_illness_counsellor
+    - action: utter_mental_illness_counsellor
+
+- story: happy mental_illness_more path
+  steps:
+    - intent: mental_illness_more
+    - action: utter_mental_illness_more
+
+- story: happy mental_illness_no_support path
+  steps:
+    - intent: mental_illness_no_support
+    - action: utter_mental_illness_no_support
+
+- story: happy mental_illness_treatment path
+  steps:
+    - intent: mental_illness_treatment
+    - action: utter_mental_illness_treatment
+
+- story: happy mental_illness_medication path
+  steps:
+    - intent: mental_illness_medication
+    - action: utter_mental_illness_medication
+
+- story: happy mental_illness_medication_payment path
+  steps:
+    - intent: mental_illness_medication_payment
+    - action: utter_mental_illness_medication_payment
+
+- story: happy mental_health_cure path
+  steps:
+    - intent: mental_health_cure
+    - action: utter_mental_health_cure
+
+- story: happy mental_health_plan path
+  steps:
+    - intent: mental_health_plan
+    - action: utter_mental_health_plan
+
+- story: happy mental_health_lonely path
+  steps:
+    - intent: mental_health_lonely
+    - action: utter_mental_health_lonely
+
+- story: happy mental_health_distraction path
+  steps:
+    - intent: mental_health_distraction
+    - action: utter_mental_health_distraction
+
+- story: happy mental_health_perspective path
+  steps:
+    - intent: mental_health_perspective
+    - action: utter_mental_health_perspective
+
+- story: happy mental_health_adults path
+  steps:
+    - intent: mental_health_adults
+    - action: utter_mental_health_adults
+
+- story: happy depression path
+  steps:
+    - intent: depression
+    - action: utter_depression
+
+- story: happy suicide path
+  steps:
+    - intent: suicide
+    - action: utter_suicide
+
+- story: happy financial_problem path
+  steps:
+    - intent: financial_problem
+    - action: utter_financial_problem
+    - action: utter_console
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+
+- story: happy health_problem path
+  steps:
+    - intent: health_problem
+    - action: utter_health_problem
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+
+- story: happy relationship_problems path
+  steps:
+    - intent: relationship_problems
+    - action: utter_relationship_problems
+
+- story: happy workplace_problems path
+  steps:
+    - intent: workplace_problems
+    - action: utter_workplace_problems
+
+
+- story: happy career_pressure_problems path
+  steps:
+    - intent: career_pressure_problems
+    - action: utter_career_pressure_problems
+
+- story: happy unfair_treatment_problems path
+  steps:
+    - intent: unfair_treatment_problems
+    - action: utter_unfair_treatment_problems
+
+- story: happy boredom_problems path
+  steps:
+    - intent: boredom_problems
+    - action: utter_boredom_problems
+
+
+- story: happy confusion_problems path
+  steps:
+    - intent: confusion_problems
+    - action: utter_confusion_problems
+
+
+- story: happy friendship_problems path
+  steps:
+    - intent: friendship_problems
+    - action: utter_friendship_problems
+
+
+- story: happy haunting_past_problems path
+  steps:
+    - intent: haunting_past_problems
+    - action: utter_haunting_past_problems
+
+
+- story: sad path 3
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_console
+  - action: action_listen
+  - intent: sad_things
+  - action: utter_ask_deep
+  - intent: sad_things
+  - action: utter_consoling_person
+  - intent: suicide
+  - action: utter_suicide
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: happy user_hobby_reading path
+  steps:
+    - intent: user_hobby_reading
+    - action: utter_user_hobby_reading
+    - action: action_listen
+    - intent: affirm
+    - action: utter_happy
+
+- story: happy user_hobby_binge_watcher path
+  steps:
+    - intent: user_hobby_binge_watcher
+    - action: utter_user_hobby_binge_watcher
+    - action: action_listen
+    - intent: affirm
+    - action: utter_happy
+
+- story: happy user_hobby_music path
+  steps:
+    - intent: user_hobby_music
+    - action: utter_user_hobby_music
+    - action: action_listen
+    - intent: affirm
+    - action: utter_spotify
+    - action: action_listen
+    - action: utter_confirm
+
+- story: sad user_hobby_music path
+  steps:
+    - intent: user_hobby_music
+    - action: utter_user_hobby_music
+    - action: action_listen
+    - intent: deny
+    - action: utter_confirm
+
+- story: happy user_hobby_travelling path
+  steps:
+    - intent: user_hobby_travelling
+    - action: utter_user_hobby_travelling
+    - action: action_listen
+    - action: utter_confirm
+
+- story: happy user_hobby_writing path
+  steps:
+    - intent: user_hobby_writing
+    - action: utter_user_hobby_writing
+
+- story: sad user_in_stress path
+  steps:
+    - intent: user_in_stress
+    - action: utter_user_in_stress
+    - action: action_listen
+    - action: utter_did_that_help
+    - action: action_listen
+    - intent: deny
+    - action: utter_nf
+    - intent: deny
+    - action: utter_confess
+    - action: action_listen
+    - intent: depression
+    - action: utter_depression
+
+- story: happy user_in_stress path
+  steps:
+    - intent: user_in_stress
+    - action: utter_user_in_stress
+    - action: action_listen
+    - action: utter_did_that_help
+    - action: action_listen
+    - intent: affirm
+    - action: utter_happy
+    - action: utter_ask_hobby
+    - action: action_listen
+
+
+- story: happy main path
+  steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: user_worry
+    - action: utter_question
+    - intent: user_pandemic
+    - action: utter_nf
+    - intent: deny
+    - action: utter_angry
+    - action: action_listen
+    - intent: family_in_danger
+    - action: utter_sorry
+    - action: utter_confess
+    - action: action_listen
+    - intent: other_things
+    - action: utter_deep_console
+    - intent: affirm
+    - action: utter_user_motivate
+    - action: utter_time_console
+    - action: action_video
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
+    - action: action_listen
+    - intent: financial_problem
+    - action: utter_financial_problem
+    - action: utter_did_that_help
+    - intent: deny
+    - action: utter_consoling_person
+    - intent: affirm
+    - action: utter_happy
+    - action: utter_ask_hobby
+    - action: action_listen
+    - intent: user_hobby_writing
+    - action: utter_user_hobby_writing
+    - action: action_listen
+    - intent: health_problem
+    - action: utter_health_problem
+    - action: utter_mental_health_perspective
+    - action: action_listen
+    - intent: family_in_danger
+    - action: utter_sorry
+    - intent: early_signs
+    - action: utter_early_signs
+    - intent: mental_illness_counsellor
+    - action: utter_mental_illness_counsellor
+    - intent: mental_illness_more
+    - action: utter_mental_illness_more
+    - intent: mental_illness_no_support
+    - action: utter_mental_illness_no_support
+    - intent: mental_illness_treatment
+    - action: utter_mental_illness_treatment
+    - intent: mental_health_cure
+    - action: utter_mental_health_cure
+    - intent: affirm
+    - action: utter_happy

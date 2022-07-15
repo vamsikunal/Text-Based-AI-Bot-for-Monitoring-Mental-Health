@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Sentiment Analysis</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+
+
+    <!--for facebook login-->
+
+    <!--facebook login ends-->
+
+    <!--error messages-->
+
+</resources>
